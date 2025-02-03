@@ -161,36 +161,45 @@
                             的指导。
                         </p> -->
                         <p  class="aa">
-                            从中学开始我就对电路、嵌入式系统抱有浓厚的兴趣，喜欢自己动手制作一些小项目。大学阶段有幸学习电子信息专业也让我能够制作更多有趣的东西，以下列举了一些我制作的项目。
+                            从中学开始我就对电路、嵌入式系统抱有浓厚的兴趣，喜欢自己动手制作一些小项目。
+                            大学阶段有幸学习电子信息专业也让我能够制作更多有趣的东西，以下列举了一些我制作的项目,
+                            主要分为嵌入式Linux开发，数字电路开发(FPGA & 74门电路)和单片机开发。
                         </p>
                     </div>
                 </div>
                 <hr class="grayline">
 
 
-                <section class="title-section text-left text-sm-center revealator-once revealator-delay1">
+                <!-- <section class="title-section text-left text-sm-center revealator-once revealator-delay1">
                     <h1>Port<span>folio</span></h1>
                     <span class="title-bg">Works</span>
-                </section>
-                <section class="revealator-once revealator-delay1">
-                    <div>
+                </section> -->
+                        <section class="title-section text-left text-sm-center revealator-once revealator-delay1">
+                            <h1>数字电路开发</h1>
+                            <span class="title-bg">FPGA</span>
+                        </section>
+
                         <!-- Articles Starts -->
                         <div class="col-15 colorbg">
                             <div class="atlbd">
                                 <article class="post-container articalbg">
                                     <div class="post-content">
                                         <div class="entry-header">
-                                            <h2><a href="7_cube_robot.html">基于树莓派的七阶魔方机器人</a></h2>
+                                            <h2><a href="chess_robot.html">三子棋人机对弈机器人</a></h2>
                                         </div>
                                         <hr class="grayline">
                                         <div class="entry-content open-sans-font">
                                             <p style="text-align: left;">
-                                                参照网上开源工程，根据工程需要修改了大部分代码，移植CIEDE2000颜色算法用于识别魔方颜色用于提升的颜色识别准确度，额外移植并编写了Linux的OLED、LED和按键的设备驱动，编写了摇杆菜单界面，使得机器人通电后无需联网、键盘和鼠标，使用摇杆控制OLED菜单即可让装置单机还原魔方。   项目地址<a href="https://github.com/TheSuperPixel/7x7x7_cube_robot"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                                这是我们用纯Verilog制作的三子棋机器人，参加全国大学生芯片与系统设计大赛FPGA赛道获得一等奖。
+                                                机器主要由图像识别部分，下棋预测部分和电机驱动部分组成，机器能够保证在与玩家对战过程中，
+                                                机器一方不会落败。玩家下棋后，机器摄像头自动识别棋子位置，通过我们编写的verilog算法自动计算下一步下棋位置，
+                                                随后控制步进电机夹取棋子和玩家对弈。此外，还支持电机自动校准复位，棋子自动复位，触摸屏可视化调颜色阈值，
+                                                LCD屏幕实时显示处理前后图像和棋局状态等功能。
                                             </p>
                                         </div>
                                         <div class="post-thumb">
-                                            <a href="7_cube_robot.html" class="d-block position-relative overflow-hidden">
-                                                <img src="img/7_cube_robot.png" class="img-fluid imgbd" alt="img">
+                                            <a href="chess_robot.html" class="d-block position-relative overflow-hidden">
+                                                <img src="img/chess_robot.png" class="img-fluid imgbd" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -198,6 +207,7 @@
                             </div>
                         </div>
                         <!-- Article Ends -->
+
 
                         <!-- Articles Starts -->
                         <div class="col-15 colorbg">
@@ -248,24 +258,113 @@
                             </div>
                         </div>
                         <!-- Article Ends -->
-                         
+                        <section class="title-section text-left text-sm-center revealator-once revealator-delay1">
+                            <h1>嵌入式Linux开发</h1>
+                            <span class="title-bg">Linux</span>
+                        </section>
+                        
+                        <section class="revealator-once revealator-delay1">
+                            <div>
+                                <!-- Articles Starts -->
+                                <div class="col-15 colorbg">
+                                    <div class="atlbd">
+                                        <article class="post-container articalbg">
+                                            <div class="post-content">
+                                                <div class="entry-header">
+                                                    <h2><a href="7_cube_robot.html">基于树莓派的七阶魔方机器人</a></h2>
+                                                </div>
+                                                <hr class="grayline">
+                                                <div class="entry-content open-sans-font">
+                                                    <p style="text-align: left;">
+                                                        参照网上开源工程，根据工程需要修改了大部分代码，移植CIEDE2000颜色算法用于识别魔方颜色用于提升的颜色识别准确度，额外移植并编写了Linux的OLED、LED和按键的设备驱动，编写了摇杆菜单界面，使得机器人通电后无需联网、键盘和鼠标，使用摇杆控制OLED菜单即可让装置单机还原魔方。
+                                                    </p>
+                                                </div>
+                                                <div class="post-thumb">
+                                                    <a href="7_cube_robot.html" class="d-block position-relative overflow-hidden">
+                                                        <img src="img/7_cube_robot.png" class="img-fluid imgbd" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <!-- Article Ends -->
+                        
+                                <!-- Articles Starts -->
+                                <div class="col-15 colorbg">
+                                    <div class="atlbd">
+                                        <article class="post-container articalbg">
+                                            <div class="post-content">
+                                                <div class="entry-header">
+                                                    <h2><a href="linux_card.html">带全键盘的便携Linux小电脑</a></h2>
+                                                </div>
+                                                <hr class="grayline">
+                                                <div class="entry-content open-sans-font">
+                                                    <p style="text-align: left;">
+                                                        这是我在2025年1月底制作完成的Linux小板子，参考网上的开源项目。不仅有原本版本的USB，网卡，屏幕，声卡等驱动，
+                                                        还添加了自制的全键盘驱动电路，编写了对应的全键盘驱动，并接入命令行，使得小电脑在通上电之后不需要电脑给串口发消息，
+                                                        使用板载的全键盘就可以操作屏幕上的命令行，不管是在家，在外面都可以随时随地玩Linux命令行，甚至还可以安装软件，
+                                                        写各种代码，使用板载gcc编译并运行C语言代码。
+                                                    </p>
+                                                </div>
+                                                <div class="post-thumb">
+                                                    <a href="linux_card.html" class="d-block position-relative overflow-hidden">
+                                                        <img src="img/linux_card.png" class="img-fluid imgbd" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <!-- Article Ends -->
+                        
+                                <!-- Articles Starts -->
+                                <div class="col-15 colorbg">
+                                    <div class="atlbd">
+                                        <article class="post-container articalbg">
+                                            <div class="post-content">
+                                                <div class="entry-header">
+                                                    <h2><a href="ros.html">自动导航建图ROS智能车</a></h2>
+                                                </div>
+                                                <hr class="grayline">
+                                                <div class="entry-content open-sans-font">
+                                                    <p style="text-align: left;">
+                                                        由于电赛需要，学习完ROS和FreeRTOS操作系统后，我在轮趣ROS小车的基础上，加装了RGB云台相机和舵机云台，在不破坏原本系统正常运行的情况下，在stm32上新加了舵机驱动的程序，在树莓派上改写了原本的底层ROS
+                                                        C++驱动节点，同时编写了RGB相机的启动节点，使得系统在原有功能的基础上，新增在ROS层面直接控制云台运动和云台RGB相机工作的功能。
+                                                    </p>
+                                                </div>
+                                                <div class="post-thumb">
+                                                    <a href="ros.html" class="d-block position-relative overflow-hidden">
+                                                        <img src="img/ros_car.png" class="img-fluid imgbd" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <!-- Article Ends -->
+                        <section class="title-section text-left text-sm-center revealator-once revealator-delay1">
+                            <h1>单片机开发</h1>
+                            <span class="title-bg">ARM</span>
+                        </section>
+
                         <!-- Articles Starts -->
                         <div class="col-15 colorbg">
                             <div class="atlbd">
                                 <article class="post-container articalbg">
                                     <div class="post-content">
                                         <div class="entry-header">
-                                            <h2><a href="ros.html">自动导航建图ROS智能车</a></h2>
+                                            <h2><a href="freertos_game.html">基于FreeRTOS的stm32多任务游戏机</a></h2>
                                         </div>
                                         <hr class="grayline">
                                         <div class="entry-content open-sans-font">
                                             <p style="text-align: left;">
-                                                由于电赛需要，学习完ROS和FreeRTOS操作系统后，我在轮趣ROS小车的基础上，加装了RGB云台相机和舵机云台，在不破坏原本系统正常运行的情况下，在stm32上新加了舵机驱动的程序，在树莓派上改写了原本的底层ROS C++驱动节点，同时编写了RGB相机的启动节点，使得系统在原有功能的基础上，新增在ROS层面直接控制云台运动和云台RGB相机工作的功能。
+                                                这是我在大二暑假制作的一个支持运行FreeRTOS操作系统的游戏机，主要往freeRTOS工程移植了若干个开源单片机游戏代码，目前系统自带4个游戏程序，可以通过菜单进行选择，除了普通的游戏功能之外，系统还支持后台运行游戏以及多任务功能。
                                             </p>
                                         </div>
                                         <div class="post-thumb">
-                                            <a href="ros.html" class="d-block position-relative overflow-hidden">
-                                                <img src="img/ros_car.png" class="img-fluid imgbd" alt="img">
+                                            <a href="freertos_game.html" class="d-block position-relative overflow-hidden">
+                                                <img src="img/freertos_game.png" class="img-fluid imgbd" alt="Blog Post">
                                             </a>
                                         </div>
                                     </div>
@@ -280,17 +379,17 @@
                                 <article class="post-container articalbg">
                                     <div class="post-content">
                                         <div class="entry-header">
-                                            <h2><a href="freertos_game.html">基于FreeRTOS的stm32多任务游戏机</a></h2>
+                                            <h2><a href="opa.html">stm32运放实验演示电路</a></h2>
                                         </div>
                                         <hr class="grayline">
                                         <div class="entry-content open-sans-font">
                                             <p style="text-align: left;">
-                                                这是我在大二暑假制作的一个支持运行FreeRTOS操作系统的游戏机，主要往freeRTOS工程移植了若干个开源单片机游戏代码，目前系统自带4个游戏程序，可以通过菜单进行选择，除了普通的游戏功能之外，系统还支持后台运行游戏以及多任务功能。   项目地址<a href="https://github.com/TheSuperPixel/stm32_FreeRTOS_Game"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                                这是我在2023年开始制作的stm32运放实验演示电路，我把许多常用运放电路集成到了一个板子上，通过拨码开关来改变不同电阻大小挡位，通过转动旋钮可调节输入电压大小。输出电压经过stm32前级运放电路调理后，进入stm32的AD转换，读取电压信息并显示到oled上，能通过OLED显示内容直观了解和学习运放的输入输出电压关系。因为电路设计，运放精度偏差，ADC调理电路和电源质量限制,实际上OLED显示的内容和公式有一定偏差,但是大致关系是正确的。这个电路仅用于演示运放能用于计算的特性，不用于实际的信号处理。
                                             </p>
                                         </div>
                                         <div class="post-thumb">
-                                            <a href="freertos_game.html" class="d-block position-relative overflow-hidden">
-                                                <img src="img/freertos_game.png" class="img-fluid imgbd" alt="Blog Post">
+                                            <a href="opa.html" class="d-block position-relative overflow-hidden">
+                                                <img src="img/opa.png" class="img-fluid imgbd" alt="Blog Post">
                                             </a>
                                         </div>
                                     </div>
