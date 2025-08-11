@@ -139,12 +139,12 @@
                 <h1 class="text-uppercase text-capitalize">74门电路卷积神经网络</h1>
                 <hr style="opacity: 0.2;">
                
-                <p>本次项目我使用pytorch搭建并训练了一个卷积神经网络，这个神经网络参考了Le-Net5架构，但是进行了大幅删减以适配电路需要。使用由3*3卷积核组成的卷积层，一层含有15个神经元的全连接层和一层含有10个神经元的全连接层组成。</p>
+                <p>本次项目我使用pytorch搭建并训练了一个卷积神经网络，这个神经网络参考了Le-Net5架构，但是进行了大幅删减，并进行权重量化以适配电路需要。使用由3*3卷积核组成的卷积层，一层含有15个神经元的全连接层和一层含有10个神经元的全连接层组成。</p>
                 <img src="img/blog/network_structure.png" class="img-fluid" alt="Blog image"/>
                 <p>之后我将权重量化为整形，使用纯C语言实现前向传播过程。</p>
-                <p>目前有两个版本的代码，新版本的代码是大三上学期完成的，加入了权重的优化和对纯C语言的准确性验证。经过训练后，纯C语言的前向传播测试准确度和pytorch模型测试准确度达到80%左右,如下图所示。左边为pytorch模型测试准确度随训练次数的变化曲线，右边为纯C语言模型测试准确度随训练次数的变化曲线。</p>
+                <p>经过训练后，纯C语言的前向传播测试准确度和pytorch模型测试准确度达到80%左右,如下图所示。左边为pytorch模型测试准确度随训练次数的变化曲线，右边为纯C语言模型测试准确度随训练次数的变化曲线。</p>
                 <img src="img/blog/network_result.png" class="img-fluid" alt="Blog image"/>
-                <p>旧版本的代码是在大一和大二完成的，目前已经将旧版本和新版本的代码移植到低性能单片机如51单片机内，并成功运行。通过右下方摇杆输入手写数字图像，通过按钮启动识别后，左边的数码管会输出正确的识别结果，同时OLED屏幕显示隐藏层神经元的数据。&nbsp &nbsp &nbsp 演示视频<a href="https://www.bilibili.com/video/BV11vxTepE2d"><i class="fa fa-paperclip" aria-hidden="true"></i></a></p>
+                <p>之后，我把代码移植到低性能单片机如51单片机内，并成功运行。通过右下方摇杆输入手写数字图像，通过按钮启动识别后，左边的数码管会输出正确的识别结果，同时OLED屏幕显示隐藏层神经元的数据。&nbsp &nbsp &nbsp 演示视频<a href="https://www.bilibili.com/video/BV11vxTepE2d"><i class="fa fa-paperclip" aria-hidden="true"></i></a></p>
                 <img src="img/blog/c51_network.png" class="img-fluid" alt="Blog image"/>
                 <p> 此外，我使用了74门电路成功复现了卷积神经网络前向传播过程。通过电路顶部的拨码开关输入手写数字图像，启动识别后，底部的LED灯会显示10个输出神经元的数值。电路全部使用串行时序，硬件模块分时复用，大大简化了电路，目前计算时间为90秒左右。 &nbsp &nbsp &nbsp 演示视频<a href="https://www.bilibili.com/video/BV1qa4y1y7KZ"><i class="fa fa-paperclip" aria-hidden="true"></i></a></p></p>
                 <img src="img/network.png" class="img-fluid" alt="Blog image"/>
