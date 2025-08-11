@@ -145,6 +145,7 @@
                 <p>机器人启动后，树莓派首先会通过.sh脚本文件自动加载事先编译完成的Linux电机设备驱动、OLED设备驱动等模块，完成外设驱动的初始化。然后启动Python的程序入口文件，此时OLED被点亮显示菜单，等待用户通过摇杆选择菜单。</p>
                 <p>当用户选择了还原魔方的选项之后，还原魔方的python程序被启动。此时程序通过OpenCV通过摄像头采集魔方画面，通过文件流的方式向底层的步进电机驱动发送指令，驱动步进电机翻转架实现魔方的转体，完成魔方六个面的识别，然后魔方图像通过CIEDE2000算法<a href="https://github.com/kkoomen/qbr"><i class="fa fa-paperclip" aria-hidden="true"></i></a>识别魔方颜色，得到代表魔方颜色的字符串。</p>
                 <p>接着代表魔方颜色的字符串会被送入rubiks-cube-NxNxN-solver算法<a href="https://github.com/dwalton76/rubiks-cube-NxNxN-solver"><i class="fa fa-paperclip" aria-hidden="true"></i></a>和科先巴二阶段算法<a href="https://github.com/dwalton76/kociemba"><i class="fa fa-paperclip" aria-hidden="true"></i></a>得到复原魔方的动作字符串。最后，字符串通过动作解析的程序，得到驱动电机的命令，接着驱动电机的命令被写入了电机的文件流中，从而驱动电机，完成魔方的复原。</p>
+                <img src="img/blog/7_cube_robot_img1.png" class="img-fluid" alt="Blog image"/>
 
                 <p>整体的软件架构如下图所示。     </p>
                 <img src="img/blog/7_cube_robot_code.png" class="img-fluid" alt="Blog image"/>
